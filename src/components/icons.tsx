@@ -1,6 +1,15 @@
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
+  horizontalLogo: (props: IconProps) => (
+    <img
+      src="/horizontal-logo.svg"
+      alt="Logo"
+      width="24"
+      height="24"
+      {...props}
+    />
+  ),
   logo: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

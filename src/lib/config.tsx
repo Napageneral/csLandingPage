@@ -7,7 +7,7 @@ export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
   name: "ChatStats.ai",
-  description: "Automate your workflow with AI",
+  description: "Unlock Personal Insights with AI",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: ["SaaS", "Template", "Next.js", "React", "Tailwind CSS"],
   links: {
@@ -44,48 +44,22 @@ export const siteConfig = {
         ],
       },
     },
-    {
-      trigger: "Solutions",
-      content: {
-        items: [
-          {
-            title: "For Small Businesses",
-            href: "#",
-            description: "Tailored automation solutions for growing companies.",
-          },
-          {
-            title: "Enterprise",
-            href: "#",
-            description: "Scalable AI automation for large organizations.",
-          },
-          {
-            title: "Developers",
-            href: "#",
-            description: "API access and integration tools for developers.",
-          },
-          {
-            title: "Healthcare",
-            href: "#",
-            description: "Specialized automation for healthcare workflows.",
-          },
-          {
-            title: "Finance",
-            href: "#",
-            description: "AI-driven process automation for financial services.",
-          },
-          {
-            title: "Education",
-            href: "#",
-            description:
-              "Streamline administrative tasks in educational institutions.",
-          },
-        ],
-      },
-    },
-    {
-      href: "/blog",
-      label: "Blog",
-    },
+    // {
+    //   trigger: "Solutions",
+    //   content: {
+    //     items: [
+    //       {
+    //         title: "For Small Businesses",
+    //         href: "#",
+    //         description: "Tailored automation solutions for growing companies.",
+    //       },
+    //     ],
+    //   },
+    // },
+    // {
+    //   href: "/blog",
+    //   label: "Blog",
+    // },
   ],
   pricing: [
     {

@@ -5,7 +5,15 @@ import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = constructMetadata({});
+export const metadata: Metadata = {
+  ...constructMetadata({}),
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
+  },
+};
 
 export const viewport: Viewport = {
   colorScheme: "light",
@@ -25,6 +33,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body
         className={cn(

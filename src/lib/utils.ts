@@ -45,7 +45,12 @@ export function constructMetadata({
       type: "website",
       locale: "en_US",
     },
-    icons: "/favicon.ico",
+    icons: {
+      icon: [
+        { url: "/favicon.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico" },
+      ],
+    },
     metadataBase: new URL(siteConfig.url),
     authors: [
       {
