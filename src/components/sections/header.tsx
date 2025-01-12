@@ -30,10 +30,9 @@ export default function Header() {
 
   return (
     <header
-      className={cn(
-        "relative sticky top-0 z-50 py-4 bg-background/60 backdrop-blur",
-        addBorder && "border-b"
-      )}
+      className={
+        "relative sticky top-0 z-50 py-2 bg-background/60 backdrop-blur"
+      }
     >
       <div className="flex justify-between items-center container">
         <Link
@@ -41,18 +40,16 @@ export default function Header() {
           title="brand-logo"
           className="relative mr-6 flex items-center space-x-2"
         >
-          <Icons.horizontalLogo className="w-auto h-[48px]" />
+          <Icons.logoAndName className="w-auto h-[40px]" />
         </Link>
 
         <div className="hidden lg:block">
-          <div className="flex items-center">
-            <nav className="mr-12">
-              <ul className="flex items-center gap-8">
-                <Menu />
-              </ul>
+          <div className="flex items-center ">
+            <nav className="mr-10">
+              <Menu />
             </nav>
 
-            <div className="gap-4 flex">
+            <div className="gap-2 flex">
               <Link
                 href="/login"
                 className={cn(
@@ -66,10 +63,10 @@ export default function Header() {
                 href="/signup"
                 className={cn(
                   buttonVariants({ variant: "default", size: "lg" }),
-                  "w-full sm:w-auto text-background flex gap-2 text-base font-medium"
+                  "w-full sm:w-auto text-background flex gap-2 text-base font-large"
                 )}
               >
-                <Icons.logo className="h-5 w-5" />
+                <Icons.whiteLogo className="h-6 w-6" />
                 Get Started for Free
               </Link>
             </div>
