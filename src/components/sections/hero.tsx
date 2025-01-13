@@ -23,7 +23,7 @@ function HeroPill() {
         📣 Announcement
       </div>
       <p className="text-xs font-medium text-primary sm:text-sm">
-        Introducing Acme.ai
+        Introducing ChatStats.ai
       </p>
       <svg
         width="12"
@@ -55,7 +55,7 @@ function HeroTitles() {
           staggerChildren: 0.2,
         }}
       >
-        {["Automate", "your", "workflow", "with AI"].map((text, index) => (
+        {["Turn", "texts", "into", "insights"].map((text, index) => (
           <motion.span
             key={index}
             className="inline-block px-1 md:px-2 text-balance font-semibold"
@@ -81,7 +81,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        No matter what problem you have, our AI can help you solve it.
+        Explore your messages for new perspectives and laughs.
       </motion.p>
     </div>
   );
@@ -113,7 +113,7 @@ function HeroCTA() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.8 }}
       >
-        7 day free trial. No credit card required.
+        Install on macOS and your first analysis is free.
       </motion.p>
     </>
   );
