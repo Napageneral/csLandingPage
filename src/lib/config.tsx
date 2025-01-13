@@ -16,34 +16,34 @@ export const siteConfig = {
     instagram: "https://instagram.com/chatstats/",
   },
   header: [
-    {
-      trigger: "Features",
-      content: {
-        main: {
-          icon: <Icons.logo className="h-6 w-6" />,
-          title: "AI-Powered Automation",
-          description: "Streamline your workflow with intelligent automation.",
-          href: "#",
-        },
-        items: [
-          {
-            href: "#",
-            title: "Task Automation",
-            description: "Automate repetitive tasks and save time.",
-          },
-          {
-            href: "#",
-            title: "Workflow Optimization",
-            description: "Optimize your processes with AI-driven insights.",
-          },
-          {
-            href: "#",
-            title: "Intelligent Scheduling",
-            description: "AI-powered scheduling for maximum efficiency.",
-          },
-        ],
-      },
-    },
+    // {
+    //   trigger: "Features",
+    //   content: {
+    //     main: {
+    //       icon: <Icons.logo className="h-6 w-6" />,
+    //       title: "AI-Powered Automation",
+    //       description: "Streamline your workflow with intelligent automation.",
+    //       href: "#",
+    //     },
+    //     items: [
+    //       {
+    //         href: "#",
+    //         title: "Task Automation",
+    //         description: "Automate repetitive tasks and save time.",
+    //       },
+    //       {
+    //         href: "#",
+    //         title: "Workflow Optimization",
+    //         description: "Optimize your processes with AI-driven insights.",
+    //       },
+    //       {
+    //         href: "#",
+    //         title: "Intelligent Scheduling",
+    //         description: "AI-powered scheduling for maximum efficiency.",
+    //       },
+    //     ],
+    //   },
+    // },
     // {
     //   trigger: "Solutions",
     //   content: {
@@ -63,138 +63,120 @@ export const siteConfig = {
   ],
   pricing: [
     {
-      name: "BASIC",
+      name: "Single Chat",
       href: "#",
-      price: "$19",
-      period: "month",
-      yearlyPrice: "$16",
+      price: "$10",
+      period: "one-time",
+      // yearlyPrice: "$16",
       features: [
-        "1 User",
-        "5GB Storage",
-        "Basic Support",
-        "Limited API Access",
-        "Standard Analytics",
+        "One detailed Wrapped report",
+        "Comedic highlights & Emotional overview",
+        "Unique Archetype & Avatar",
+        "Data encrypted in transit",
+        "Instant shareable link (if you choose)"
       ],
-      description: "Perfect for individuals and small projects",
-      buttonText: "Subscribe",
+      description: "Perfect for a quick peek into one conversation",
+      buttonText: "Analyze Now",
       isPopular: false,
     },
     {
-      name: "PRO",
+      name: "All Chats Wrapped",
       href: "#",
-      price: "$49",
-      period: "month",
-      yearlyPrice: "$40",
+      price: "$50",
+      period: "one-time",
+      // yearlyPrice: "$40",
       features: [
-        "5 Users",
-        "50GB Storage",
-        "Priority Support",
-        "Full API Access",
-        "Advanced Analytics",
+        "Unlimited chat analyses",
+        "50% savings vs. single-chat pricing",
+        "Year in review for every conversation",
+        "All Comedic & Emotional reports",
+        "Unique Archetypes & Avatars"
       ],
-      description: "Ideal for growing businesses and teams",
-      buttonText: "Subscribe",
+      description: "Best value for text connoisseurs",
+      buttonText: "Wrap Them All",
       isPopular: true,
-    },
-    {
-      name: "ENTERPRISE",
-      href: "#",
-      price: "$99",
-      period: "month",
-      yearlyPrice: "$82",
-      features: [
-        "Unlimited Users",
-        "500GB Storage",
-        "24/7 Premium Support",
-        "Custom Integrations",
-        "AI-Powered Insights",
-      ],
-      description: "For large-scale operations and high-volume users",
-      buttonText: "Subscribe",
-      isPopular: false,
     },
   ],
   faqs: [
     {
-      question: "What is acme.ai?",
+      question: "What is ChatStats.ai?",
       answer: (
         <span>
-          acme.ai is a platform that helps you build and manage your AI-powered
-          applications. It provides tools and services to streamline the
-          development and deployment of AI solutions.
+          ChatStats.ai is a macOS app that uses AI to turn your iMessage history
+          into a fun, shareable “Year in Review.” You’ll see highlights of your
+          funniest exchanges, an emotional mood graph, and a unique Archetype +
+          Avatar—all without sifting through thousands of messages.
         </span>
       ),
     },
     {
-      question: "How can I get started with acme.ai?",
+      question: "How can I get started with ChatStats.ai?",
       answer: (
         <span>
-          You can get started with acme.ai by signing up for an account on our
-          website, creating a new project, and following our quick-start guide.
-          We also offer tutorials and documentation to help you along the way.
+          Simply download the macOS app, choose any iMessage conversation, and
+          click “Analyze.” You can try three chats for free before deciding if you
+          want to pay per chat or purchase the All Chats Wrapped plan.
         </span>
       ),
     },
     {
-      question: "What types of AI models does acme.ai support?",
+      question: "Is my data secure if you process it on external servers?",
       answer: (
         <span>
-          acme.ai supports a wide range of AI models, including but not limited
-          to natural language processing, computer vision, and predictive
-          analytics. We continuously update our platform to support the latest
-          AI technologies.
+          Yes. Your data is encrypted both locally and in transit. We briefly
+          process your messages on our servers to generate your analysis, but they
+          are deleted immediately once the report is complete. The only time
+          any details are shared is if you choose to share your Wrapped link with
+          someone else.
         </span>
       ),
     },
     {
-      question: "Is acme.ai suitable for beginners in AI development?",
+      question: "What if I only want one or two chats analyzed?",
       answer: (
         <span>
-          Yes, acme.ai is designed to be user-friendly for both beginners and
-          experienced developers. We offer intuitive interfaces, pre-built
-          templates, and extensive learning resources to help users of all skill
-          levels create AI-powered applications.
+          Our Single Chat option is perfect for occasional analyses, priced at
+          $10 per chat. Each report includes comedic highlights, an emotional
+          overview, and a unique Archetype + Avatar.
         </span>
       ),
     },
     {
-      question: "What kind of support does acme.ai provide?",
+      question: "Can I share my ChatStats reports with friends?",
       answer: (
         <span>
-          acme.ai provides comprehensive support including documentation, video
-          tutorials, a community forum, and dedicated customer support. We also
-          offer premium support plans for enterprises with more complex needs.
+          Absolutely! Each chat you analyze generates a private link you can share
+          if you want others to see your results—especially fun for reminiscing
+          over inside jokes and memorable moments.
         </span>
       ),
     },
   ],
   footer: [
-    {
-      title: "Product",
-      links: [
-        { href: "#", text: "Features", icon: null },
-        { href: "#", text: "Pricing", icon: null },
-        { href: "#", text: "Documentation", icon: null },
-        { href: "#", text: "API", icon: null },
-      ],
-    },
-    {
-      title: "Company",
-      links: [
-        { href: "#", text: "About Us", icon: null },
-        { href: "#", text: "Careers", icon: null },
-        { href: "#", text: "Blog", icon: null },
-        { href: "#", text: "Press", icon: null },
-        { href: "#", text: "Partners", icon: null },
-      ],
-    },
+    // {
+    //   title: "Product",
+    //   links: [
+    //     { href: "#", text: "Features", icon: null },
+    //     { href: "#", text: "Pricing", icon: null },
+    //     { href: "#", text: "Documentation", icon: null },
+    //     { href: "#", text: "API", icon: null },
+    //   ],
+    // },
+    // {
+    //   title: "Company",
+    //   links: [
+    //     { href: "#", text: "About Us", icon: null },
+    //     { href: "#", text: "Careers", icon: null },
+    //     { href: "#", text: "Blog", icon: null },
+    //     { href: "#", text: "Press", icon: null },
+    //     { href: "#", text: "Partners", icon: null },
+    //   ],
+    // },
     {
       title: "Resources",
       links: [
-        { href: "#", text: "Community", icon: null },
         { href: "#", text: "Contact", icon: null },
         { href: "#", text: "Support", icon: null },
-        { href: "#", text: "Status", icon: null },
       ],
     },
     {

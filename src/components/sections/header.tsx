@@ -50,7 +50,7 @@ export default function Header() {
             </nav>
 
             <div className="gap-2 flex">
-              <Link
+              {/* <Link
                 href="/login"
                 className={cn(
                   buttonVariants({ variant: "outline", size: "lg" }),
@@ -58,7 +58,7 @@ export default function Header() {
                 )}
               >
                 Login
-              </Link>
+              </Link> */}
               <Link
                 href="/signup"
                 className={cn(

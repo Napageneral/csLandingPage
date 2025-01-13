@@ -81,7 +81,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        Explore your messages for new perspectives and laughs.
+        Explore your messages for new perspectives and old laughs.
       </motion.p>
     </div>
   );
@@ -104,7 +104,7 @@ function HeroCTA() {
           )}
         >
           <Icons.whiteLogo className="h-6 w-6" />
-          Get started for free
+          Download for free (macOS)
         </Link>
       </motion.div>
       <motion.p

@@ -1,26 +1,26 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Shield, Zap } from "lucide-react";
+import { Brain, Shield, Zap, CircleOff, Wrench } from "lucide-react";
 
 const problems = [
   {
     title: "Data Overload",
     description:
-      "Businesses struggle to make sense of vast amounts of complex data, missing out on valuable insights that could drive growth and innovation.",
+      "Tens of thousands of iMessages pile up—full of jokes, heartfelt moments, and clues about who we are. Most of us never see the bigger picture.",
     icon: Brain,
   },
   {
-    title: "Slow Decision-Making",
+    title: "Missed Opportunities for Reflection",
     description:
-      "Traditional data processing methods are too slow, causing businesses to lag behind market changes and miss crucial opportunities.",
-    icon: Zap,
+      "Scrolling massive chat histories is tedious, making it easy to miss hidden gems or subtle patterns that spark deeper connections.",
+    icon: CircleOff,
   },
   {
-    title: "Data Security Concerns",
+    title: "Complex or Nonexistent Tools",
     description:
-      "With increasing cyber threats, businesses worry about the safety of their sensitive information when adopting new technologies.",
-    icon: Shield,
+      "iMessage data is tricky to analyze—most solutions lack a fun “year in review,” leaving you with raw messages and no way to see the big picture.",
+    icon: Wrench,
   },
 ];
 
@@ -28,7 +28,7 @@ export default function Component() {
   return (
     <Section
       title="Problem"
-      subtitle="Manually entering your data is a hassle."
+      subtitle="Your Chats Are Bursting with Untapped Stories"
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {problems.map((problem, index) => (

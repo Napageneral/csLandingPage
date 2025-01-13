@@ -14,25 +14,11 @@ import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
 export default function PricingSection() {
-  const [isMonthly, setIsMonthly] = useState(true);
   const { isDesktop } = useWindowSize();
 
-  const handleToggle = () => {
-    setIsMonthly(!isMonthly);
-  };
-
   return (
-    <Section title="Pricing" subtitle="Choose the plan that's right for you">
-      <div className="flex justify-center mb-10">
-        <span className="mr-2 font-semibold">Monthly</span>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <Label>
-            <Switch checked={!isMonthly} onCheckedChange={handleToggle} />
-          </Label>
-        </label>
-        <span className="ml-2 font-semibold">Yearly</span>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:2 gap-4">
+    <Section title="Pricing" subtitle="Wrap 'em all">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {siteConfig.pricing.map((plan, index) => (
           <motion.div
             key={index}
@@ -42,16 +28,8 @@ export default function PricingSection() {
                 ? {
                     y: 0,
                     opacity: 1,
-                    x:
-                      index === siteConfig.pricing.length - 1
-                        ? -30
-                        : index === 0
-                        ? 30
-                        : 0,
-                    scale:
-                      index === 0 || index === siteConfig.pricing.length - 1
-                        ? 0.94
-                        : 1.0,
+                    x: index === 0 ? 30 : -30,
+                    scale: 1.0,
                   }
                 : {}
             }
@@ -66,12 +44,7 @@ export default function PricingSection() {
             }}
             className={cn(
               `rounded-2xl border-[1px] p-6 bg-background text-center lg:flex lg:flex-col lg:justify-center relative`,
-              plan.isPopular ? "border-primary border-[2px]" : "border-border",
-              index === 0 || index === siteConfig.pricing.length - 1
-                ? "z-0 transform translate-x-0 translate-y-0 -translate-z-[50px] rotate-y-[10deg]"
-                : "z-10",
-              index === 0 && "origin-right",
-              index === siteConfig.pricing.length - 1 && "origin-left"
+              plan.isPopular ? "border-primary border-[2px]" : "border-muted-foreground/70"
             )}
           >
             {plan.isPopular && (
@@ -88,17 +61,8 @@ export default function PricingSection() {
               </p>
               <p className="mt-6 flex items-center justify-center gap-x-2">
                 <span className="text-5xl font-bold tracking-tight text-foreground">
-                  {isMonthly ? plan.price : plan.yearlyPrice}
+                  {plan.price}
                 </span>
-                {plan.period !== "Next 3 months" && (
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">
-                    / {plan.period}
-                  </span>
-                )}
-              </p>
-
-              <p className="text-xs leading-5 text-muted-foreground">
-                {isMonthly ? "billed monthly" : "billed annually"}
               </p>
 
               <ul className="mt-5 gap-2 flex flex-col">
@@ -112,7 +76,7 @@ export default function PricingSection() {
 
               <hr className="w-full my-4" />
 
-              <Link
+              {/* <Link
                 href={plan.href}
                 className={cn(
                   buttonVariants({
@@ -126,7 +90,7 @@ export default function PricingSection() {
                 )}
               >
                 {plan.buttonText}
-              </Link>
+              </Link> */}
               <p className="mt-6 text-xs leading-5 text-muted-foreground">
                 {plan.description}
               </p>

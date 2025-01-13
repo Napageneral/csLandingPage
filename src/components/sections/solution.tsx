@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Advanced AI Algorithms",
+    title: "Comedic Highlight Reel",
     description:
-      "Our platform utilizes cutting-edge AI algorithms to provide accurate and efficient solutions for your business needs.",
+      "Spot your funniest lines and inside jokes from the past year. Instantly relive moments you forgot you ever typed.",
     className: "hover:bg-red-500/10 transition-all duration-500 ease-out",
     content: (
       <>
@@ -24,9 +24,9 @@ const features = [
     ),
   },
   {
-    title: "Secure Data Handling",
+    title: "Emotional Mood Graph",
     description:
-      "We prioritize your data security with state-of-the-art encryption and strict privacy protocols, ensuring your information remains confidential.",
+      "See how your conversations shift in tone over time. Pinpoint peaks of excitement and dips.",
     className:
       "order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out",
     content: (
@@ -38,9 +38,9 @@ const features = [
     ),
   },
   {
-    title: "Seamless Integration",
+    title: "Unique Archetype & Avatar",
     description:
-      "Easily integrate our AI solutions into your existing workflows and systems for a smooth and efficient operation.",
+      "Like a digital crest for your relationship, each chat gets its own archetype and AI-generated image.",
     className:
       "md:row-span-2 hover:bg-orange-500/10 transition-all duration-500 ease-out",
     content: (
@@ -64,9 +64,9 @@ const features = [
     ),
   },
   {
-    title: "Customizable Solutions",
+    title: "Effortless One-Click Analysis",
     description:
-      "Tailor our AI services to your specific needs with flexible customization options, allowing you to get the most out of our platform.",
+      "No tedious manual scrolling. Just install on your Mac, select a chat, and let ChatStats do the rest. All data is stored locally and encrypted—your privacy comes first.",
     className:
       "flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-green-500/10 transition-all duration-500 ease-out",
     content: (
@@ -86,8 +86,8 @@ export default function Component() {
   return (
     <Section
       title="Solution"
-      subtitle="Empower Your Business with AI Workflows"
-      description="Generic AI tools won't suffice. Our platform is purpose-built to provide exceptional AI-driven solutions for your unique business needs."
+      subtitle="Your Personal 'Year in Review' for iMessage"
+      description="Our “wrapped” approach delivers a playful yet comprehensive analysis of your messages—all in just one click."
       className="bg-neutral-100 dark:bg-neutral-900"
     >
       <div className="mx-auto mt-16 grid max-w-sm grid-cols-1 gap-6 text-gray-500 md:max-w-3xl md:grid-cols-2 xl:grid-rows-2 md:grid-rows-3 xl:max-w-6xl xl:auto-rows-fr xl:grid-cols-3">

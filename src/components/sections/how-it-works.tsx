@@ -5,25 +5,25 @@ import { Sparkles, Upload, Zap } from "lucide-react";
 const data = [
   {
     id: 1,
-    title: "1. Upload Your Data",
+    title: "1. Install ChatStats on your Mac",
     content:
-      "Simply upload your data to our secure platform. We support various file formats and data types to ensure a seamless integration with your existing systems.",
+      "Download and install the ChatStats.ai app. For best results, you'll want to import an iPhone backup.",
     image: "/dashboard.png",
     icon: <Upload className="w-6 h-6 text-primary" />,
   },
   {
     id: 2,
-    title: "2. Click Start",
+    title: "2. Select a Chat to Analyze",
     content:
-      "Our advanced AI algorithms automatically process and analyze your data, extracting valuable insights and patterns that would be difficult to identify manually.",
+      "Choose any conversation from your iMessage history. Click “Analyze,” then sit back and let our AI do the heavy lifting.",
     image: "/dashboard.png",
     icon: <Zap className="w-6 h-6 text-primary" />,
   },
   {
     id: 3,
-    title: "3. Get Actionable Insights",
+    title: "3. Get Your Personal ‘Year in Review’",
     content:
-      "Receive clear, actionable insights and recommendations based on the AI analysis. Use these insights to make data-driven decisions and improve your business strategies.",
+      "In minutes, see a fun highlight reel of your funniest moments, an emotional mood graph, and a unique archetype + avatar.",
     image: "/dashboard.png",
     icon: <Sparkles className="w-6 h-6 text-primary" />,
   },
