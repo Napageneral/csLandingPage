@@ -20,7 +20,7 @@ export default function CtaSection() {
             "w-full sm:w-auto text-background flex gap-2"
           )}
         >
-          <Icons.logo className="h-6 w-6" />
+          <Icons.whiteLogo className="h-6 w-6" />
           Get started for free
         </Link>
       </div>
